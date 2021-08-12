@@ -1,0 +1,101 @@
+.cake_container{
+    margin-top: 10px;
+    height: 100vh;
+    display: grid;
+}
+.cake{
+    position: relative;
+    width: 650px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px ;
+    display: flex;
+    box-shadow: 0 14px 25px rgba(0, 0,0, 0.5);
+  
+}
+
+.cake_details h1{
+    font-size: 20px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.cake_details .price {
+    position: absolute;
+    top:3%;
+    left: 30%;
+    background-color: dodgerblue;
+    color: white;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    width: 95px;  
+    font-weight: 600;
+    font-size: 20px;
+}
+.cake img{
+    padding: 10px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.cake_weight{
+    display: flex;
+    width: 200px;
+    
+}
+
+.cake_weight label{
+    margin-right: 20px;
+    text-transform: capitalize;
+    
+}
+.cake_weight select{
+    background-color: aliceblue;
+    border: none;
+    padding: 7px 10px;
+} 
+
+.cake_data form{
+    margin-top: 20px;
+    display: grid;
+}
+.cake_data input{
+    border: none;
+    background-color:dodgerblue;
+    color:white;
+    padding: 10px 25px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+.cake_data label{
+ width: 150px;
+ font-size: 15px;
+ font-weight: 400;
+ margin-bottom: 12px;
+}
+.cake_data input:focus{
+    outline: none;
+ 
+}
+.cake_data button{
+    width: 150px;
+    padding: 7px 20px;
+    background-color: dodgerblue;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+button:hover{
+    box-shadow: 0 0 5px #00B0FF,
+    0 0 15px #00B0FF,
+    0 0 20px #00B0FF,
+    0 0 30px #00B0FF;
+  }
