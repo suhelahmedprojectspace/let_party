@@ -1,104 +1,86 @@
 .profile_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    height: 100vh;
-    
+    margin-top: 100px;
+    height: 100%;
+    display: grid;
+    place-items: center;
 }
 .profile{
-    width: 500px;
+    display: flex;
+    box-shadow: 0 7px 15px rgba(0,0,0,0.5);
+    width: 700px;
     height: 400px;
-    position: relative;
-    box-shadow: 0 1px 15px rgba(0,0,0,0.5);
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
 
+}
+.profile .profile_img{
+    width: 300px;
+}
 
-
-}    
 .profile img{
-    position: absolute;
     width: 200px;
-    object-fit: cover;
     height: 200px;
+    object-fit: cover;
     border-radius: 100%;
-    margin-top: -60px;
-    left: 30%;
+    margin-top: 50px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-   
-  
 }
 .profile .profile_Card{
-    margin-top: 200px;
-    height: 200px;
-
-    
+    background-color:#01b7ff ;
+    width: 400px;
+    color:white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.profile_Card .profile_info .profile_name{
-    display: flex; 
-    width: 300px;
-    position: absolute;
-    left: 20%;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    letter-spacing: 2px;
+.profile_Card .profile_info{
+    padding: 40px;
 
 }
-.profile_Card .profile_info .profile_name p{
-    letter-spacing: 2px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 4px;
-    margin-top: 2px;
-    font-weight: bold;
-}
-.profile_Card .profile_info .profile_email{
+.profile_Card .profile_id,.profile_name, .profile_email,.profile_dob{
     display: flex;
-    width: 300px;
-    position: absolute;
-    left: 20%;
-    top:60%;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    padding: 14px;
+    width: 340px;
+}
+.profile_Card h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 2px;
     font-weight: 300;
-    letter-spacing: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.profile_Card .profile_info .profile_email p{
+.profile_Card p{
+    font-size: 18px;
     letter-spacing: 2px;
     font-family: 'Times New Roman', Times, serif;
-    margin-left: 4px;
-    margin-top: 2px;
-    font-weight: bold;
-}
-.profile_Card form{
-    position: absolute;
-    top:70%;
-    left: 20%;
 
 }
-.profile_Card form label{
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    letter-spacing: 2px;
+.profile_Card .profile_btn{
+    display: flex;
+    justify-content: center;
 }
-.profile_Card input[type="date"]{
-    width: 200px;
-    padding: 7px 20px;
-    outline: none;
-    background-color: black;
-    color: white;
-    border: none;
-    margin-left:12px;
-    
+.profile_btn .update{
+   background-color:white;
+   width: 140px;
+   padding: 10px 15px;
+   color:black;
+   border-radius: 4px;
 }
-.profile_Card .update{
-    position: absolute;
-    bottom: 0;
-    background-color:black;
-    letter-spacing: 2px;
-    font-size: 20px;
-    width: 100%;
-    padding: 12px;
-}
+.profile_btn .logout{
+    background-color:white;
+    width: 140px;
+    padding: 10px 15px;
+    color:black;
+    border-radius: 4px;
+    margin-left: 4px;
+ }
+
+.profile_btn .update:hover{
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+
+ }
+ .profile_btn .logout:hover{
+    box-shadow: 0 2px 15px rgba(0,0,0,0.5);
+
+ }
+
+
