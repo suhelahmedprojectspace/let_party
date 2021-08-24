@@ -1,0 +1,105 @@
+/* ----- Variables ----- */
+$color-primary: #4c4c4c;
+$color-secondary: black;
+$color-highlight: #ff3f40;
+
+/* ----- Product Section ----- */
+.product {
+	display: grid;
+	grid-template-columns: 0.9fr 1fr;
+	margin: auto;
+	width: 600px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px 25px -7px $color-primary;
+}
+
+/* ----- Photo Section ----- */
+
+.photo-main {
+	border-radius: 6px 6px 0 0;
+	img {
+		left: 20%;
+		top: 2em;
+		height: 400px;
+		object-fit: cover;
+		width: 300px;
+		border-top-left-radius:5px ;
+		border-bottom-left-radius: 5px;
+	}
+}
+
+/* ----- Informations Section ----- */
+.product__info {
+	padding: 0.8em 0;
+
+	
+}
+
+.title {
+	h1 {
+		margin-bottom: 0.1em;
+		color: $color-primary;
+		font-size: 1.5em;
+		font-weight: 900;
+	}
+
+	span {
+		font-size: 0.7em;
+		color: $color-primary;
+	}
+}
+
+.price {
+	margin: 1.5em 0;
+	color: $color-highlight;
+	font-size: 1.2em;
+
+	span {
+		padding-left: 0.15em;
+		font-size: 2.9em;
+	}
+}
+
+.description {
+	margin-left: 10px;
+	margin-bottom: 30px;
+
+
+	h3 {
+		margin-bottom: 1em;
+		color:$color-primary;
+
+		
+	}
+
+	ul {
+		list-style:none;
+		font-size: 0.8em;
+		margin-left: 1em;
+	}
+
+	li {
+
+		text-indent: -0.6em;
+		margin-bottom: 0.5em;
+	}
+}
+
+.buy--btn {
+	padding: 1.5em 3.1em;
+	border: none;
+	border-radius: 7px;
+	font-size: 0.8em;
+	font-weight: 700;
+	text-decoration: none;
+	letter-spacing: 1.3px;
+	color: #fff;
+	background-color: $color-highlight;
+	box-shadow: 2px 2px 25px -7px $color-primary;
+	cursor: pointer;
+
+	&:active {
+		transform: scale(0.97);
+	}
+}
